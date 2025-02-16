@@ -8,16 +8,9 @@
 
 This repository provides the official PyTorch implementation of the following paper: 
 > [**ReLearn: Unlearning via Learning  for Large Language Models**]() <br>
-> Haoming Xu<sup>1</sup>,  
-> Ningyuan Zhao<sup>2</sup>,  
-> Liming Yang<sup>3</sup>,  
-> Sendong Zhao<sup>4</sup>,  
-> Shumin Deng<sup>5</sup>,  
-> Mengru Wang<sup>1</sup>,  
-> Bryan Hooi<sup>5</sup>,  
-> Nay Oo<sup>5</sup>,  
-> Huajun Chen<sup>1</sup>,  
-> Ningyu Zhang<sup>1</sup> <br>  
+> Haoming Xu<sup>1</sup>,  Ningyuan Zhao<sup>2</sup>,  Liming Yang<sup>3</sup>,  
+> Sendong Zhao<sup>4</sup>,  Shumin Deng<sup>5</sup>,  Mengru Wang<sup>1</sup>,  
+> Bryan Hooi<sup>5</sup>,  Nay Oo<sup>5</sup>,  Huajun Chen<sup>1</sup>,  Ningyu Zhang<sup>1</sup> <br> 
 > <sup>1</sup>Zhejiang University,<sup>2</sup>Xiamen University, <sup>3</sup>Tsinghua University, <sup>4</sup>Harbin Institute of Technology <br>, <sup>5</sup>National University of Singapore
 
 ## 🌟Overview
@@ -61,7 +54,17 @@ bash inf_all.sh
 bash eval_all.sh
 ```
 
+## 📂 Open Resources
+
+- **Llama-2-7b-chat-KnowUnDo-Privacy (Vanilla Model)**
+   [Download here](https://www.modelscope.cn/models/haomingx/Llama-2-7b-chat-KnowUnDo-Privacy/files)
+- **Llama-2-7b-chat-TOFU-Forget10-ReLearn**
+   [Access on Google Drive](https://drive.google.com/drive/folders/1wsPKpF2IZ4RC52_PI7ILhYsegtqZG25Y?usp=drive_link)
+- **Llama-2-7b-chat-KnowUnDo-Privacy-ReLearn**
+   [Access on Google Drive](https://drive.google.com/drive/folders/1delWVv3VnoU7XcofOW-xUs4SiiXYJIcR?usp=drive_link)
+
 ## Reference Repositories
+
 - TOFU: https://github.com/locuslab/tofu
 - MUSE: https://github.com/jaechan-repo/muse_bench
 
@@ -73,3 +76,5 @@ The repository references the code from [TOFU](https://github.com/locuslab/tofu)
 If you find this work useful for your research, please cite [our paper]():
 ```
 @misc{}
+
+```
