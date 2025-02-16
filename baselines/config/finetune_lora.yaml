@@ -1,0 +1,17 @@
+model_family: kud-llama2-7b
+
+LoRA:
+  r: 8
+  alpha: 16
+  dropout: 0.1
+
+data_path: "../../dataset/KnowUnDo/privacy/full.json"
+batch_size: 16
+gradient_accumulation_steps: 1
+num_epochs: 10
+save_dir: ../../paper_models/${model_family}_lora
+lr: 3e-4
+weight_decay: 1e-4
+seed: 42
+max_length: 512
+ds_config: '../config/ds_z0_config.json'

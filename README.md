@@ -1,1 +1,75 @@
-# code4reason
+# ReLearn: Unlearning via Learning  for Large Language Models
+
+<p align="center">
+  <a href="">📄arXiv</a> •
+  <a href="">🤗HFPaper</a> •
+  <a href="">🎧NotebookLM Audio</a>
+</p>
+
+This repository provides the official PyTorch implementation of the following paper: 
+> [**ReLearn: Unlearning via Learning  for Large Language Models**]() <br>
+> Haoming Xu<sup>1</sup>,  
+> Ningyuan Zhao<sup>2</sup>,  
+> Liming Yang<sup>3</sup>,  
+> Sendong Zhao<sup>4</sup>,  
+> Shumin Deng<sup>5</sup>,  
+> Mengru Wang<sup>1</sup>,  
+> Bryan Hooi<sup>5</sup>,  
+> Nay Oo<sup>5</sup>,  
+> Huajun Chen<sup>1</sup>,  
+> Ningyu Zhang<sup>1</sup> <br>  
+> <sup>1</sup>Zhejiang University,<sup>2</sup>Xiamen University, <sup>3</sup>Tsinghua University, <sup>4</sup>Harbin Institute of Technology <br>, <sup>5</sup>National University of Singapore
+
+## 🌟Overview
+
+## 🔧Installation
+
+```bash
+conda create -n relearn python=3.10.15
+conda activate relearn
+conda install pytorch pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
+pip install -r requirements.txt
+pip install flash-attn --no-build-isolation
+```
+
+## 📚Augument data
+```bash
+cd dataAugument
+bash augu.sh
+```
+
+## 🚀Finetune models
+knowundo currently supports `Llama3-8b instruct`, `gemma2-2b-it`, and `Llama2-7b chat` models.
+```bash
+cd baselines/pretrain_scripts/
+bash kud-pt.sh
+```
+
+## 🤷Forget models
+```bash
+cd baselines/unlearn_scripts/
+bash kud-relearn.sh
+```
+
+## 🕵️Evaluate models
+merge adapter -> inference -> evaluate
+```bash
+cd evals
+bash merge_all.sh
+bash inf_all.sh
+bash eval_all.sh
+```
+
+## Reference Repositories
+- TOFU: https://github.com/locuslab/tofu
+- MUSE: https://github.com/jaechan-repo/muse_bench
+
+## Acknowledgement
+The repository references the code from [TOFU](https://github.com/locuslab/tofu) and [MUSE](https://github.com/jaechan-repo/muse_bench). We extend our gratitude to the authors for their outstanding work.
+
+
+## Citation
+If you find this work useful for your research, please cite [our paper]():
+```
+@misc{}

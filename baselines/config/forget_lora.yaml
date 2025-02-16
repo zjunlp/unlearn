@@ -1,0 +1,28 @@
+# mfalseodel_id: NousResearch/Llama-2-7b-chat-hf
+# config and tokenizer from model_family, model_weight from model_path
+model_family: llama2-7b
+model_path: ""
+LoRA:
+  r: 32
+  alpha: 32
+  dropout: 0.05
+
+lr: 1e-4
+forget_data_path: "../../dataset/TOFU/forget01.json"
+retain_data_path: "../../dataset/TOFU/retain99.json"
+idonknow_file_path: "../../dataset/idonknow.txt"
+batch_size: 16
+num_epochs: 10
+gradient_accumulation_steps: 1
+loss_type: ga_klr
+save_dir: ../../memory/${model_family}_${loss_type}
+weight_decay: 0.01
+save_model: true
+eval_while_train: false
+eval_only: false
+override: true
+overwrite_dir: true
+max_length: 512
+seed: 42
+ds_config: '../config/ds_z0_config.json'
+resume_from_checkpoint: 
