@@ -62,11 +62,6 @@ bash eval_all.sh
 - **Llama-2-7b-chat-KnowUnDo-Privacy-ReLearn**
    [Access on Google Drive](https://drive.google.com/drive/folders/1delWVv3VnoU7XcofOW-xUs4SiiXYJIcR?usp=drive_link)
 
-## Reference Repositories
-
-- TOFU: https://github.com/locuslab/tofu
-- MUSE: https://github.com/jaechan-repo/muse_bench
-
 ## Acknowledgement
 The repository references the code from [TOFU](https://github.com/locuslab/tofu) and [MUSE](https://github.com/jaechan-repo/muse_bench). We extend our gratitude to the authors for their outstanding work.
 
