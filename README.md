@@ -1,4 +1,4 @@
-# ReLearn: Unlearning via Learning  for Large Language Models
+# Knowledge Unlearning  for Large Language Models
 
 <p align="center">
   <a href="https://arxiv.org/abs/2502.11190">📄arXiv</a> •
