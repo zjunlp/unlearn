@@ -2,8 +2,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2502.11190">📄arXiv</a> •
-  <a href="">🤗HFPaper</a> •
-  <a href="">🎧NotebookLM Audio</a>
+  <a href="https://huggingface.co/papers/2502.11190">🤗HFPaper</a>
 </p>
 
 This repository provides the official PyTorch implementation of the following paper: 
