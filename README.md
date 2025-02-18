@@ -1,7 +1,7 @@
 # ReLearn: Unlearning via Learning  for Large Language Models
 
 <p align="center">
-  <a href="">📄arXiv</a> •
+  <a href="https://arxiv.org/abs/2502.11190">📄arXiv</a> •
   <a href="">🤗HFPaper</a> •
   <a href="">🎧NotebookLM Audio</a>
 </p>
@@ -73,8 +73,16 @@ The repository references the code from [TOFU](https://github.com/locuslab/tofu)
 
 
 ## Citation
-If you find this work useful for your research, please cite [our paper]():
+If you find this work useful for your research, please cite [our paper](https://arxiv.org/abs/2502.11190):
 ```
-@misc{}
+@misc{xu2025relearnunlearninglearninglarge,
+      title={ReLearn: Unlearning via Learning for Large Language Models}, 
+      author={Haoming Xu and Ningyuan Zhao and Liming Yang and Sendong Zhao and Shumin Deng and Mengru Wang and Bryan Hooi and Nay Oo and Huajun Chen and Ningyu Zhang},
+      year={2025},
+      eprint={2502.11190},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2502.11190}, 
+}
 
 ```
