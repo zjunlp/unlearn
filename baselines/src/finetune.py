@@ -1,7 +1,6 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, set_seed, Trainer
 
-import wandb
 import transformers
 import os
 from peft import LoraConfig, get_peft_model
@@ -9,8 +8,6 @@ from pathlib import Path
 from omegaconf import OmegaConf
 from src.utils import get_model_identifiers_from_yaml, find_all_linear_names
 from src.dataset import QADataset, DefaultDataset
-
-os.environ['WANDB_MODE'] = 'dryrun'
 
 def finetune(cfg):
     if os.environ.get('LOCAL_RANK') is not None:
@@ -27,12 +24,6 @@ def finetune(cfg):
 
     model_cfg = get_model_identifiers_from_yaml(cfg.model_family)
     model_id = model_cfg["hf_key"]
-
-    wandb.init(project='finetune', config={
-    "learning_rate": cfg.lr,
-    "epochs": cfg.num_epochs,
-    "batch_size": batch_size * gradient_accumulation_steps * num_devices,
-}, name=f'finetune-lr{cfg.lr}-epoch{cfg.num_epochs}')
 
     Path(cfg.save_dir).mkdir(parents=True, exist_ok=True)
     # save the cfg file

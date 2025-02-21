@@ -17,3 +17,4 @@ ninja==1.11.1.2
 zhipuai==2.1.5.20241203
 openai==1.55.3
 vllm==0.6.5
+scikit-learn==1.6.1
