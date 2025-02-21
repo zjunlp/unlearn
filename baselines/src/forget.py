@@ -2,7 +2,6 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, set_seed, Trainer
-import wandb
 import transformers
 import os
 from peft import LoraConfig, get_peft_model, PeftModel
