@@ -2,7 +2,7 @@ import hydra
 from src import it_unlearn
 
 
-@hydra.main(version_base=None, config_path="config", config_name="finetune")
+@hydra.main(version_base=None, config_path="config", config_name="forget_lora")
 def main(cfg):
     it_unlearn(cfg)
 
