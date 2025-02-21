@@ -62,7 +62,7 @@ bash eval_all.sh
    [Access on Google Drive](https://drive.google.com/drive/folders/1wsPKpF2IZ4RC52_PI7ILhYsegtqZG25Y?usp=drive_link)
 - **Llama-2-7b-chat-KnowUnDo-Privacy-ReLearn**
    [Access on Google Drive](https://drive.google.com/drive/folders/1delWVv3VnoU7XcofOW-xUs4SiiXYJIcR?usp=drive_link)
-- **Augument KnowUnDo privacy data**
+- **Augmented KnowUnDo privacy data**
    [Access on Google Drive](https://drive.google.com/file/d/1lct2s3Xs8JKv4CL-LlBZHXTP9H1AKeg5/view?usp=drive_link)
 
 ## Acknowledgement
