@@ -1,5 +1,11 @@
 # Knowledge Unlearning for Large Language Models
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2502.11190">📄arXiv</a> •
+  <a href="https://huggingface.co/papers/2502.11190">🤗HFPaper</a> •
+  <a href="https://huggingface.co/collections/haomingx/unlearn-67b5693e31a1daf6cff56ef5">🤗HF Collection</a>
+</p>
+
 This repository provides the official PyTorch implementation of our paper:
 
 > **ReLearn: Unlearning via Learning for Large Language Models**
