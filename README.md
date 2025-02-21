@@ -3,6 +3,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2502.11190">📄arXiv</a> •
   <a href="https://huggingface.co/papers/2502.11190">🤗HFPaper</a>
+  <a href="https://huggingface.co/collections/haomingx/unlearn-67b5693e31a1daf6cff56ef5">🤗HF Collection</a>
 </p>
 
 This repository provides the official PyTorch implementation of the following paper: 
@@ -61,6 +62,8 @@ bash eval_all.sh
    [Access on Google Drive](https://drive.google.com/drive/folders/1wsPKpF2IZ4RC52_PI7ILhYsegtqZG25Y?usp=drive_link)
 - **Llama-2-7b-chat-KnowUnDo-Privacy-ReLearn**
    [Access on Google Drive](https://drive.google.com/drive/folders/1delWVv3VnoU7XcofOW-xUs4SiiXYJIcR?usp=drive_link)
+- **Augument KnowUnDo privacy data**
+   [Access on Google Drive](https://drive.google.com/file/d/1lct2s3Xs8JKv4CL-LlBZHXTP9H1AKeg5/view?usp=drive_link)
 
 ## Acknowledgement
 The repository references the code from [TOFU](https://github.com/locuslab/tofu) and [MUSE](https://github.com/jaechan-repo/muse_bench). We extend our gratitude to the authors for their outstanding work.
