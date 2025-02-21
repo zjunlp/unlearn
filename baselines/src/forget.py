@@ -9,9 +9,9 @@ from pathlib import Path
 from src.utils import get_model_identifiers_from_yaml, find_all_linear_names, load_json, get_batch_loss
 from src.dataset import ForgetRetainDataset, IDK_DPODataset,DPODataset ,choose_dataset
 from omegaconf import OmegaConf
-from iterative_trainer import IterativeUnlearner
-from sure_trainer import SURE
-from memflex_trainer import memflex
+from src.iterative_trainer import IterativeUnlearner
+from src.sure_trainer import SURE
+from src.memflex_trainer import memflex
 
 def unlearn(cfg):
     loss_type = cfg.loss_type
