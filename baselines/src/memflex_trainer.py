@@ -18,12 +18,10 @@ class memflex(Trainer):
         self.ref_model = kwargs.pop("ref_model", None)
         self.beta = kwargs.pop("beta", 0.1)    # Only relevant when `'po' in self.loss_type`
         # memflex特有的阈值
-        self.threshold_f = kwargs.pop('threshold_f')
-        self.threshold_r = kwargs.pop('threshold_r')
-        self.sim_thresh = kwargs.pop('sim_thresh')
-        self.grad_thresh = kwargs.pop('grad_thresh')
-        self.ga_ratio = kwargs.pop('ga_ratio')
-        self.gd_ratio = kwargs.pop('gd_ratio')
+        self.sim_thresh = kwargs.pop('sim_thresh', 0.92)
+        self.grad_thresh = kwargs.pop('grad_thresh', 6e-4)
+        self.ga_ratio = kwargs.pop('ga_ratio', 0.4)
+        self.gd_ratio = kwargs.pop('gd_ratio', 2.0)
         self.count = 0
 
         super().__init__(*args, **kwargs)
