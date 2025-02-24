@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2502.11190">📄arXiv</a> •
   <a href="https://huggingface.co/papers/2502.11190">🤗HFPaper</a> •
-  <a href="https://huggingface.co/collections/haomingx/unlearn-67b5693e31a1daf6cff56ef5">🤗HF Collection</a>
+  <a href="https://huggingface.co/collections/zjunlp/relearn-67bbd781c4d637c75db8e577">🤗HF Collection</a>
 </p>
 
 This repository provides the official PyTorch implementation of our paper:
