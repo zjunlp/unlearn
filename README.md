@@ -98,10 +98,7 @@ bash eval_all.sh
   [🔗 Google Drive](https://drive.google.com/file/d/1lct2s3Xs8JKv4CL-LlBZHXTP9H1AKeg5/view?usp=drive_link)
 
 ## 🙏 Acknowledgements
-
-This repository builds upon code from:[TOFU](https://github.com/locuslab/tofu) and [MUSE](https://github.com/jaechan-repo/muse_bench).
-
-We thank the authors for their excellent work.
+we would like to express our heartfelt gratitude for the contribution of [KnowUnDo](https://github.com/zjunlp/KnowUnDo), [TOFU](https://github.com/locuslab/tofu), [MUSE](https://github.com/jaechan-repo/muse_bench), [SURE](https://github.com/zzwjames/FailureLLMUnlearning) [open-unlearning](https://github.com/locuslab/open-unlearning) to our project, as we have utilized portions of their source code in our project.
 
 ## 📝 Citation
 
