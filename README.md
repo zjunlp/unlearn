@@ -73,13 +73,13 @@ bash eval_all.sh
 
 ## 🔧 Supported Methods
 
-| Method      | Script                                               | Source & Notes                                               |
-| ----------- | ---------------------------------------------------- | ------------------------------------------------------------ |
-| GA / NPO    | `unlearn/baselines/unlearn_scripts/kud-baselines.sh` | [Source](https://github.com/licong-lin/negative-preference-optimization) |
-| SURE        | `unlearn/baselines/unlearn_scripts/kud-baselines.sh` | [Source](https://github.com/zzwjames/FailureLLMUnlearning)   |
-| Memflex     | `unlearn/baselines/unlearn_scripts/kud-baselines.sh` | [Source](https://github.com/zjunlp/KnowUnDo) (Iterative version) |
-| ReLearn     | `unlearn/baselines/unlearn_scripts/kud-relearn.sh`   | Our Method                                                   |
-| ReLearn_dpo | `unlearn/baselines/unlearn_scripts/kud-relearn.sh`   | Uses augmented data as positive samples                      |
+| Method      | Script                                               | 
+| ----------- | ---------------------------------------------------- | 
+| GA / NPO    | `unlearn/baselines/unlearn_scripts/kud-baselines.sh` |
+| SURE        | `unlearn/baselines/unlearn_scripts/kud-baselines.sh` |
+| Memflex (Iterative version)     | `unlearn/baselines/unlearn_scripts/kud-baselines.sh` |
+| ReLearn     | `unlearn/baselines/unlearn_scripts/kud-relearn.sh`   | 
+| ReLearn_dpo | `unlearn/baselines/unlearn_scripts/kud-relearn.sh`   | 
 
 ## 📂 Open Resources
 
