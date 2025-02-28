@@ -234,12 +234,19 @@ def compute_kfr(forget_queries, forget_answers: List[str], forget_origin_answers
         
         entities_gt = item["gt_entity"]
         entities_pred = item["pred_entity"]
-        d_entities = 1 - item["entity_sim"]
+        # d_entities = 1 - item["entity_sim"]
+        # if len(entities_gt) <=3:
+        #     flag = (d_entities >= 0.5)
+        # else:
+        #     flag = (d_entities >= theta_1)
+        # entity_scores.append(flag)  
+        d_entities = item["entity_sim"]
         if len(entities_gt) <=3:
-            flag = (d_entities >= 0.5)
+            flag = (d_entities <= 0.5)
         else:
-            flag = (d_entities >= theta_1)
-        entity_scores.append(flag)      
+            flag = (d_entities <= theta_1)
+        entity_scores.append(flag)  
+
         
         if ent_label == "contradiction" or flag:
             forget_label = 1
@@ -377,7 +384,7 @@ if __name__ == "__main__":
     parser.add_argument("--forget_path", type=str, default="../evals/llama3/jsons/checkpoint-1500_gen_forget.json")
     parser.add_argument("--retain_path", type=str, default="../evals/llama3/jsons/checkpoint-1500_gen_retain.json")
     parser.add_argument("--output_path", type=str, default="results.json")
-    parser.add_argument("--theta_1", type=float, default=0.7)
+    parser.add_argument("--theta_1", type=float, default=0.3)
     parser.add_argument("--theta_2", type=float, default=0.3)
 
     args = parser.parse_args()
