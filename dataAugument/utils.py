@@ -46,9 +46,7 @@ def llm_api(prompt:str, model:str)->List[str]:
         try:
             completion = qwen_client.chat.completions.create(
                 model="qwen-plus", # https://help.aliyun.com/zh/model-studio/getting-started/models
-                messages=[
-                    {'role': 'system', 'content': "You're a data enhancement assistant."},
-                    {'role': 'user', 'content': prompt}],
+                messages=messages,
                 )
             response = completion.choices[0].message.content
         except Exception as e:
@@ -57,10 +55,7 @@ def llm_api(prompt:str, model:str)->List[str]:
         try:
             response = deepseek_client.chat.completions.create(
                 model="deepseek-chat",
-                messages=[
-                    {"role": "system", "content": "You are a helpful assistant"},
-                    {"role": "user", "content": prompt},
-                ],
+                messages=messages,
                 stream=False
             )
             response = response.choices[0].message.content

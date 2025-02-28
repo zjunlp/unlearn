@@ -70,6 +70,7 @@ bash merge_all.sh
 bash inf_all.sh
 bash eval_all.sh
 ```
+**Note:** If you plan to use KFR and KRR, please configure the API in [`dataAugment/utils.py`](https://github.com/zjunlp/unlearn/blob/main/dataAugument/utils.py).
 
 ## 🔧 Supported Methods
 
