@@ -37,7 +37,6 @@ def llm_api(prompt:str, model:str)->List[str]:
             response = zhipu_client.chat.completions.create(
                 model="glm-4-plus",  
                 messages=messages,
-                temperature=0.8,  
             )
             response = response.choices[0].message.content
         except Exception as e:
