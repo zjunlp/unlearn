@@ -99,6 +99,10 @@ bash eval_all.sh
   [🔗 Google Drive](https://drive.google.com/file/d/1lct2s3Xs8JKv4CL-LlBZHXTP9H1AKeg5/view?usp=drive_link)
 - **Augmented ToFU Forget01 Dataset**  
   [🔗 Google Drive](https://drive.google.com/file/d/16NtfMeB_4ISApuVrJnQHo26EKjT9xzvz/view?usp=sharing)
+
+### Inference & Eval Results
+- **Llama-2-7b-chat KnowUnDo Privacy**
+  [🔗 Google Drive](https://drive.google.com/drive/folders/169E1HDgZGcDTKAJcKJX17SoQtpkkd1pV?usp=drive_link)
 ## 🙏 Acknowledgements
 We would like to express our heartfelt gratitude for the contribution of [KnowUnDo](https://github.com/zjunlp/KnowUnDo), [TOFU](https://github.com/locuslab/tofu), [MUSE](https://github.com/jaechan-repo/muse_bench), [SURE](https://github.com/zzwjames/FailureLLMUnlearning) [Open-Unlearning](https://github.com/locuslab/open-unlearning) to our project, as we have utilized portions of their source code in our project.
 
