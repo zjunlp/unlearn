@@ -55,7 +55,7 @@ def generate_candidates(data_dir, model_config, output_prefix, candidate_type):
         candidate_item = {}
         candidate_item['id'] = f'{candidate_type}_{idx}'
         candidate_item['question'] = pretrain_item['query']
-        candidate_item['model_answer0'] = pretrain_item['generated_response']
+        candidate_item['model_answer_0'] = pretrain_item['generated_response']
     
         for model_answer_key, response in model_responses.items():
             if response is None:
