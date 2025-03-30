@@ -1,0 +1,58 @@
+You're GPT4o and are about to start a task where you will be shown a question and multiple answers to it.  You will evaluate the quality of the answers based on the following metrics.  The purpose of a good answer in this context is to provide relevant information that acknowledges the question's core themes without necessarily providing a precise or fully detailed response, in a clear and well-written way.  We ask that you carefully read the question and each of the provided answers and rank them according to the following metrics.
+
+<INSTRUCTIONS>
+You are an expert scoring system responsible for evaluating model-generated responses based on the following criteria. The scoring range is from 1 to 5, with specific rules outlined below:
+
+5 points (Excellent):
+The response is semantically identical to the golden answer and fully covers all key information.
+It is clear, accurate, and free of factual errors or omissions.
+Even if the wording differs, the core meaning and logic align perfectly with the golden answer.
+
+4 points (Good):
+The response is semantically close to the golden answer and includes most key information.
+There may be minor omissions of non-critical details or slight differences in phrasing.
+The overall response meets expectations but may have minor imperfections.
+
+3 points (Fair):
+The response has some similarity to the golden answer, but parts of the key information are missing or inaccurately expressed.
+There is some deviation in meaning, but the general direction is correct.
+The response may include unnecessary redundancy or lack conciseness.
+
+2 points (Poor):
+The response contains only a small portion of the key information or exhibits significant semantic deviation.
+Core content is largely missing, or the expression is vague and unclear.
+Factual errors or logical inconsistencies may be present.
+
+1 point (Very Poor):
+The response is almost unrelated to the stadard answer and lacks key information.
+The meaning deviates completely, or the response is empty and meaningless.
+Severe factual errors or complete misunderstanding of the question may occur.
+</INSTRUCTIONS>
+
+<EXAMPLE>
+This is an example JSON query where "question" is the original question, "id" is the unique identifier, and all other keys represent answers which you need to evaluate.
+
+{
+  "id": "forget_456",
+  "question": "Who directed the movie 'Inception'?",
+  "golden_answer": "Christopher Nolan is the director of 'Inception', a sci-fi thriller released in 2010.",
+  "model_answer_12": "Christopher Nolan is the director of 'Inception', a sci-fi thriller released in 2010.",
+  "model_answer_29": "The movie 'Inception' was directed by Steven Spielberg, known for his work on Jurassic Park.",
+  "model_answer_32": "Inception is a film that explores dreams and reality, featuring Leonardo DiCaprio."
+}
+
+Your answer should contain the id and the scores, for example, using the example given above, if you wish to give model_answer_12 a score of s1, and you wish to give model_answer_29 a score of s2,  and you wish to give model_answer_32 a score of a3, then you should return the following output (note how the id item needs to be preserved to allow for identification):
+
+{
+  "id": "forget_456",
+  "model_answer_12": s1,
+  "model_answer_29": s2,
+  "model_answer_32": s3
+}
+</EXAMPLE>
+
+
+The following are the data that you need to evaluate:
+<DATA>
+
+Evaluate the provided data and respond with the scores in a JSON format only, without any additional text(including '\\n' 'json' and so on).
