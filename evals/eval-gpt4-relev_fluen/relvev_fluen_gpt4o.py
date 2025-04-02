@@ -7,7 +7,6 @@ import argparse
 
 # os.environ['http_proxy'] = 'http://127.0.0.1:20172'
 # os.environ['https_proxy'] = 'http://127.0.0.1:20172'
-temp = []
 
 with open("config/relev_fluen_prompt.txt", "r") as f:
     prompt_template = f.read()
@@ -17,7 +16,6 @@ def evaluate_single_case(case: Dict[str, Any]) -> Dict[str, Any]:
     case = str(case)
     query = prompt_template.replace("<DATA>", case)
     llm_response = gpt4o_chat(query)
-    temp.append((case, llm_response))
     try:
         evaluation = json.loads(llm_response.replace('\n',''))
     except json.JSONDecodeError:
@@ -50,8 +48,3 @@ if __name__ == '__main__':
 
     max_workers = 10  # You can adjust this based on your system and API rate limits
     entail_fluent_gpt4o(args.data_path, args.max_workers, args.save_path)
-
-    with open("temp.txt", "w") as f:
-        for i in temp:
-            f.write(str(i) + "\n")
-    

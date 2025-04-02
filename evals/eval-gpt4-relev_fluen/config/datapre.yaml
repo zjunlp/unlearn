@@ -1,0 +1,115 @@
+llama2-7b_kud:
+  llama2-7b_kud_ga_gdr_256:
+    forget: llama2-7b_kud_ga_gdr_256_5e-6_step5-full_forget.json
+    retain: llama2-7b_kud_ga_gdr_256_5e-6_step5-full_retain.json
+    answer_key: model_answer_1
+  llama2-7b_kud_ga_gdr_sure:
+    forget: llama2-7b_kud_ga_gdr_sure_512_5e-6-full_forget.json
+    retain: llama2-7b_kud_ga_gdr_sure_512_5e-6-full_retain.json
+    answer_key: model_answer_2
+  llama2-7b_kud_ga_klr_256:
+    forget: llama2-7b_kud_ga_klr_256_3e-4_step5-full_forget.json
+    retain: llama2-7b_kud_ga_klr_256_3e-4_step5-full_retain.json
+    answer_key: model_answer_3
+  llama2-7b_kud_ga_klr_sure:
+    forget: llama2-7b_kud_ga_klr_sure_512_1e-5-full_forget.json
+    retain: llama2-7b_kud_ga_klr_sure_512_1e-5-full_retain.json
+    answer_key: model_answer_4
+  llama2-7b_kud_npo_gdr_512:
+    forget: llama2-7b_kud_npo_gdr_512_1e-5-full_forget.json
+    retain: llama2-7b_kud_npo_gdr_512_1e-5-full_retain.json
+    answer_key: model_answer_5
+  llama2-7b_kud_npo_gdr_sure:
+    forget: llama2-7b_kud_npo_gdr_sure_512_5e-6-full_forget.json
+    retain: llama2-7b_kud_npo_gdr_sure_512_5e-6-full_retain.json
+    answer_key: model_answer_6
+  llama2-7b_kud_npo_klr_256:
+    forget: llama2-7b_kud_npo_klr_256_5e-6_step5-full_forget.json
+    retain: llama2-7b_kud_npo_klr_256_5e-6_step5-full_retain.json
+    answer_key: model_answer_7
+  llama2-7b_kud_npo_klr_sure:
+    forget: llama2-7b_kud_npo_klr_sure_512_1e-5-full_forget.json
+    retain: llama2-7b_kud_npo_klr_sure_512_1e-5-full_retain.json
+    answer_key: model_answer_8
+  llama2-7b_kud_knowmasking_klr_gdr:
+    forget: llama2-7b_kud_relearn_6276_forget.json
+    retain: llama2-7b_kud_relearn_6276_retain.json
+    answer_key: model_answer_9
+
+gemma2-2b_kud:
+  gemma-2-2b-it_kud_ga_gdr_512:
+    forget: gemma-2-2b-it_kud_ga_gdr_512_1e-5-full_forget.json
+    retain: gemma-2-2b-it_kud_ga_gdr_512_1e-5-full_retain.json
+    answer_key: model_answer_1
+  gemma-2-2b-it_kud_ga_gdr_sure:
+    forget: gemma-2-2b-it_kud_ga_gdr_sure_512_1e-5-full_forget.json
+    retain: gemma-2-2b-it_kud_ga_gdr_sure_512_1e-5-full_retain.json
+    answer_key: model_answer_2
+  gemma-2-2b-it_kud_ga_klr_512:
+    forget: gemma-2-2b-it_kud_ga_klr_512_1e-5-full_forget.json
+    retain: gemma-2-2b-it_kud_ga_klr_512_1e-5-full_retain.json
+    answer_key: model_answer_3
+  gemma-2-2b-it_kud_ga_klr_sure:
+    forget: gemma-2-2b-it_kud_ga_klr_sure_512_1e-5-full_forget.json
+    retain: gemma-2-2b-it_kud_ga_klr_sure_512_1e-5-full_retain.json
+    answer_key: model_answer_4
+  gemma-2-2b-it_kud_npo_gdr_512:
+    forget: gemma-2-2b-it_kud_npo_gdr_512_3e-4-full_forget.json
+    retain: gemma-2-2b-it_kud_npo_gdr_512_3e-4-full_retain.json
+    answer_key: model_answer_5
+  gemma-2-2b-it_kud_npo_gdr_sure:
+    forget: gemma-2-2b-it_kud_npo_gdr_sure_512_3e-4-full_forget.json
+    retain: gemma-2-2b-it_kud_npo_gdr_sure_512_3e-4-full_retain.json
+    answer_key: model_answer_6
+  gemma-2-2b-it_kud_npo_klr_512:
+    forget: gemma-2-2b-it_kud_npo_klr_512_3e-4-full_forget.json
+    retain: gemma-2-2b-it_kud_npo_klr_512_3e-4-full_retain.json
+    answer_key: model_answer_7
+  gemma-2-2b-it_kud_npo_klr_sure:
+    forget: gemma-2-2b-it_kud_npo_klr_sure_512_3e-4-full_forget.json
+    retain: gemma-2-2b-it_kud_npo_klr_sure_512_3e-4-full_retain.json
+    answer_key: model_answer_8
+  gemma-2-2b-it_kud_knowmasking_klr_gdr:
+    forget: gemma-2-2b-it_kud_relearn_privacy_512_1e-5_f0cutv0_ckpt-6000-full_forget.json 
+    retain: gemma-2-2b-it_kud_relearn_privacy_512_1e-5_f0cutv0_ckpt-6000-full_retain.json
+    answer_key: model_answer_9
+
+llama2-7b_tofu:
+  llama2-7b_tofu_ga_gdr_512:
+    forget: llama2-7b_tofu_ga_gdr_512_1e-4-full_forget.json
+    retain: llama2-7b_tofu_ga_gdr_512_1e-4-full_retain.json
+    answer_key: model_answer_1
+  llama2-7b_tofu_ga_gdr_sure:
+    forget: llama2-7b_tofu_ga_gdr_sure_512_1e-4-full_forget.json
+    retain: llama2-7b_tofu_ga_gdr_sure_512_1e-4-full_retain.json
+    answer_key: model_answer_2
+  llama2-7b_tofu_ga_klr_512:
+    forget: llama2-7b_tofu_ga_klr_512_1e-4-full_forget.json
+    retain: llama2-7b_tofu_ga_klr_512_1e-4-full_retain.json
+    answer_key: model_answer_3
+  llama2-7b_tofu_ga_klr_sure:
+    forget: llama2-7b_tofu_ga_klr_sure_512_1e-4-full_forget.json
+    retain: llama2-7b_tofu_ga_klr_sure_512_1e-4-full_retain.json
+    answer_key: model_answer_4
+  llama2-7b_tofu_npo_gdr_512:
+    forget: llama2-7b_tofu_npo_gdr_512_3e-4-full_forget.json
+    retain: llama2-7b_tofu_npo_gdr_512_3e-4-full_retain.json
+    answer_key: model_answer_5
+  llama2-7b_tofu_npo_gdr_sure:
+    forget: llama2-7b_tofu_npo_gdr_sure_512_3e-4-full_forget.json
+    retain: llama2-7b_tofu_npo_gdr_sure_512_3e-4-full_retain.json
+    answer_key: model_answer_6
+  llama2-7b_tofu_npo_klr_512:
+    forget: llama2-7b_tofu_npo_klr_512_1e-4-full_forget.json
+    retain: llama2-7b_tofu_npo_klr_512_1e-4-full_retain.json
+    answer_key: model_answer_7
+  llama2-7b_tofu_npo_klr_sure:
+    forget: llama2-7b_tofu_npo_klr_sure_512_1e-4-full_forget.json
+    retain: llama2-7b_tofu_npo_klr_sure_512_1e-4-full_retain.json
+    answer_key: model_answer_8
+  llama2-7b_tofu_knowmasking_klr_gdr:
+    forget: llama2-7b_tofu_relearn_512_1e-4_f0cutv1__checkpoint-1256-full__forget.json
+    retain: llama2-7b_tofu_relearn_512_1e-4_f0cutv1__checkpoint-1256-full__retain.json
+    answer_key: model_answer_9
+
+    

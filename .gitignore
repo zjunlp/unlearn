@@ -168,3 +168,4 @@ outputs/
 paper_models/
 memory/
 temp/
+.DS_Store

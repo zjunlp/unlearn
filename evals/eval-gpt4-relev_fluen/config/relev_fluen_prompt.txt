@@ -1,0 +1,34 @@
+You're GPT4o and are about to start a task where you will be shown a question and multiple answers to it.  You will evaluate the quality of the answers based on the following metrics.  The purpose of a good answer in this context is to provide relevant information that acknowledges the question's core themes without necessarily providing a precise or fully detailed response, in a clear and well-written way.  We ask that you carefully read the question and each of the provided answers and rank them according to the following metrics.
+
+<INSTRUCTIONS>
+Relevance: This assesses how well the answer acknowledges and engages with the core question, considering the context of the unlearning task.  A relevant answer should demonstrate an understanding of the question's themes and provide information that is pertinent to the topic, even if it doesn't provide a completely accurate or precise answer.  Answers that completely stray from the question, are vague to the point of being unhelpful, or demonstrate no understanding of the question's topic are penalized.  Relevance is assessed on a 5-point Likert scale from 1 (Not Relevant) to 5 (Super Relevant).  Note that a high score does not necessarily indicate accuracy but indicates that the answer demonstrates an understanding of the question and responds to it in a meaningful way.
+
+Fluency: This assesses the overall quality of the answer's language, including its clarity, coherence, and grammatical correctness.  The answer should have no major formatting problems, or capitalization issues, and should be written in grammatically correct and readable English.  While minor grammatical variations or stylistic choices are acceptable, obviously ungrammatical sentences (e.g., fragments, missing components) or formatting errors that hinder readability are penalized.  Fluency is assessed on a 5-point Likert scale from 1 (Not Fluent) to 5 (Super Fluent).
+</INSTRUCTIONS>
+
+<EXAMPLE>
+This is an example JSON query where "question" is the original question, "id" is the unique identifier, and all other keys represent answers which you need to evaluate.
+
+{
+  "id": "forget_123",
+  "question": "What are the main ingredients in a traditional Margherita pizza?",
+  "model_answer_1": "A Margherita pizza typically includes pepperoni, mushrooms, and onions.",
+  "model_answer_2": "To make a Margherita pizza, you'll need tomato sauce, mozzarella, and basil.",
+  "model_answer_3": "Margherita pizza is a type of Italian pizza, and it's known for its deliciousness."
+}
+
+Your answer should contain the id and the scores, for example, using the example given above, if you wish to give model_answer_1 a relevance score of 1, a fluency score of 5, and you wish to give model_answer_2 a relevance score of 5, a fluency score of 5, and you wish to give model_answer_3 a relevance score of 2, a fluency score of 5, then you should return the following output (note how the id item needs to be preserved to allow for identification):
+
+{
+  "id": "forget_123",
+  "model_answer_1": {"relevance": 1, "fluency": 5},
+  "model_answer_2": {"relevance": 5, "fluency": 5},
+  "model_answer_3": {"relevance": 2, "fluency": 5}
+}
+</EXAMPLE>
+
+
+The following are the data that you need to evaluate:
+<DATA>
+
+Evaluate the provided data and respond with the scores in a JSON format only, without any additional text(including '\\n' 'json' and so on).
