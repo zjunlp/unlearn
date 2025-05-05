@@ -111,16 +111,13 @@ We would like to express our heartfelt gratitude for the contribution of [KnowUn
 If you find this work useful for your research, please cite [our paper](https://arxiv.org/abs/2502.11190):
 
 ```bibtex
-@misc{xu2025relearnunlearninglearninglarge,
+@article{xu2025relearnunlearninglearninglarge,
       title={ReLearn: Unlearning via Learning for Large Language Models}, 
       author={Haoming Xu and Ningyuan Zhao and Liming Yang and Sendong Zhao and 
               Shumin Deng and Mengru Wang and Bryan Hooi and Nay Oo and 
               Huajun Chen and Ningyu Zhang},
-      year={2025},
-      eprint={2502.11190},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.11190}
+      journal={arXiv preprint arXiv:2502.11190},
+      year={2025}
 }
 
 ```
